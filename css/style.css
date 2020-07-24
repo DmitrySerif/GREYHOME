@@ -1,0 +1,45 @@
+a{
+  color:#fff;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #689CD2;
+    color:#fff;
+    font-family: Pacifico;
+}
+
+.header__section{
+    display: flex;
+    align-items: center;
+}
+.header__item {
+    padding:10px 15px;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.header__item:hover{
+    background-color: #FF9900;
+    border-radius: 4px;
+}
+
+.headerlogo{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.nav {
+    
+    border: 3px solid #689CD2; 
+padding: 50px; 
+}
+.h1 {
+    padding: 30px;
+}
+    
+.footer {
+    background-image: url(../pictures/wall.jpg);
+background-position: top;
+}
