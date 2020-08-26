@@ -37,6 +37,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
     width: 100%;
     top: 0;
     padding-bottom: 10px;
+    overflow: hidden;
 }
 .logo__link {
     display: block;
@@ -57,11 +58,6 @@ text-shadow: 4px 4px 4px black;
     text-shadow: 12px 12px 12px black;
     letter-spacing: 20px;
     color:whitesmoke;
-    background: rgb(70,62,212);
-background: -moz-linear-gradient(90deg, rgba(70,62,212,0.6152836134453781) 14%, rgba(238,230,0,0.520045518207283) 24%, rgba(201,20,153,0.36878501400560226) 58%, rgba(87,148,241,0.4023984593837535) 97%);
-background: -webkit-linear-gradient(90deg, rgba(70,62,212,0.6152836134453781) 14%, rgba(238,230,0,0.520045518207283) 24%, rgba(201,20,153,0.36878501400560226) 58%, rgba(87,148,241,0.4023984593837535) 97%);
-background: linear-gradient(90deg, rgba(70,62,212,0.6152836134453781) 14%, rgba(238,230,0,0.520045518207283) 24%, rgba(201,20,153,0.36878501400560226) 58%, rgba(87,148,241,0.4023984593837535) 97%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#463ed4",endColorstr="#5794f1",GradientType=1);
     transition:.4s;  
 }
 
@@ -114,9 +110,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#463ed4",endCo
     text-align: center;
     width: 100%;
     overflow: hidden;
-    padding-bottom: 300px;
+    padding: 200px;
     border-bottom: 1px solid white;
-/*    margin-top:220px;*/
+    padding-bottom: 300px;
+
 }
 .title {
     font-size: 4em;
@@ -133,9 +130,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#463ed4",endCo
 .hello-container2 {
     text-align: center;
     width: 100%;
-    
     padding-top:200px;
-    overflow: hidden;
     height: 100%;
     padding-bottom: 300px;
     background-color: white;
