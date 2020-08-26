@@ -1,47 +1,144 @@
-li{
+:root {
+    box-sizing: border-box;
+}
+
+*,
+    ::before,
+    ::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: rgb(191,191,191);
+background: -moz-linear-gradient(90deg, rgba(191,191,191,0.7861519607843137) 30%, rgba(255,255,255,1) 50%, rgba(149,147,147,0.7861519607843137) 67%);
+background: -webkit-linear-gradient(90deg, rgba(191,191,191,0.7861519607843137) 30%, rgba(255,255,255,1) 50%, rgba(149,147,147,0.7861519607843137) 67%);
+background: linear-gradient(90deg, rgba(191,191,191,0.7861519607843137) 30%, rgba(255,255,255,1) 50%, rgba(149,147,147,0.7861519607843137) 67%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bfbfbf",endColorstr="#959393",GradientType=1);
+    margin: 0 auto;
+    padding: 0 auto;
+    
+}
+
+
+/*----------------header-block----------------------*/
+.main-navigation {
+background: rgb(63,94,251);
+background: -moz-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(68,152,252,1) 71%, rgba(70,179,252,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(68,152,252,1) 71%, rgba(70,179,252,1) 100%);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(68,152,252,1) 71%, rgba(70,179,252,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#46b3fc",GradientType=1);
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    font-family: monospace;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.logo__link {
+    display: block;
+/*    text-transform: lowercase;*/
+    font-size: 2.8em;
+    text-decoration: none;
+    color: white;
+text-shadow: 4px 4px 4px black;
+    letter-spacing:10px;
+    text-align: center;
+    padding:10px;
+/*    margin: 0 auto;*/
+    font-family: pacific;
+    transition:.9s;
+
+}
+.logo__link:hover {
+    text-shadow: 12px 12px 12px black;
+    font-size:4em;
+    letter-spacing: 40px;
+    color:whitesmoke;
+    background: rgb(70,62,212);
+background: -moz-linear-gradient(90deg, rgba(70,62,212,0.6152836134453781) 14%, rgba(238,230,0,0.520045518207283) 24%, rgba(201,20,153,0.36878501400560226) 58%, rgba(87,148,241,0.4023984593837535) 97%);
+background: -webkit-linear-gradient(90deg, rgba(70,62,212,0.6152836134453781) 14%, rgba(238,230,0,0.520045518207283) 24%, rgba(201,20,153,0.36878501400560226) 58%, rgba(87,148,241,0.4023984593837535) 97%);
+background: linear-gradient(90deg, rgba(70,62,212,0.6152836134453781) 14%, rgba(238,230,0,0.520045518207283) 24%, rgba(201,20,153,0.36878501400560226) 58%, rgba(87,148,241,0.4023984593837535) 97%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#463ed4",endColorstr="#5794f1",GradientType=1);
+    transition:.9s;
+   
+    
+}
+.menu__item{
     padding:10px 15px;
     font-size: 20px;
-    margin-left: 5px;
+    margin-left: 15px;
     list-style-type: none;
+    text-transform: lowercase;
+    transition:.3s;
 }
-li:hover{
+.menu__item:hover{
     background-color: #FF9900;
     border-radius: 4px;
+    transform: scale(1.2);
+    transition:.7s;
+    box-shadow: 2px 2px 2px black;
 }
-a{
+.menu__item:active {
+    animation: 
+}
+.menu__link{
   color:#fff;
     text-decoration: none;
 }
-header{
+.menu__list{
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background: #689CD2;
-    color:#fff;
-    font-family: Pacifico;
     text-decoration: none;
-}
-
-ul{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-
-
-.logo{
-    font-family: sans-serif;
-    font-weight: bold;
-}
-
-
-h1 {
-    padding: 30px;
-}
     
+  
+}
+
+/*---------------main---------------------*/
+.hello-container {
+    text-align: center;
+    width: 100%;
+/*    height: 200%;*/
+    padding-top:200px;
+    overflow: hidden;
+/*    height: 100%;*/
+    padding-bottom: 300px;
+    border-bottom: 1px solid white;
+}
+.title {
+    font-size: 4em;
+    font-family: monospace;
+}
+
+.subtitle {
+    font-size: 2em;
+    font-family: monospace;
+    display: inline-block;
+    text-align: center;
+    width: 700px;
+}
+.hello-container2 {
+    text-align: center;
+    width: 100%;
+    
+    padding-top:200px;
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 300px;
+    background-color: white;
+}
+.title {
+    font-size: 4em;
+    font-family: monospace;
+}
+
+.subtitle {
+    font-size: 2em;
+    font-family: monospace;
+    display: inline-block;
+    text-align: center;
+    width: 700px;
+}
 footer {
-    background-image: url(../pictures/wall.jpg);
+   
 min-height: 400px;
     min-width: 400px;
 }
