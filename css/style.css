@@ -16,17 +16,14 @@ background: linear-gradient(90deg, rgba(191,191,191,0.7861519607843137) 30%, rgb
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bfbfbf",endColorstr="#959393",GradientType=1);
     margin: 0 auto;
     padding: 0 auto;
+    width: 100%;
     
 }
 
 
-/*----------------header-block----------------------*/
-.main-navigation {
-background: rgb(63,94,251);
-background: -moz-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(68,152,252,1) 71%, rgba(70,179,252,1) 100%);
-background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(68,152,252,1) 71%, rgba(70,179,252,1) 100%);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(68,152,252,1) 71%, rgba(70,179,252,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#46b3fc",GradientType=1);
+/*------------------------header---------------------------*/
+.main-navigation__inner {
+    background-color: rgba(0, 0, 0, 1);
     display: flex;
     justify-content: space-between;
     color:#fff;
@@ -39,74 +36,77 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
     padding-bottom: 10px;
     overflow: hidden;
 }
+/*---------------------------logo---------------------------------*/
 .logo__link {
     display: block;
     text-transform: lowercase;
     font-size: 2.8em;
     text-decoration: none;
     color: white;
-text-shadow: 4px 4px 4px black;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
     letter-spacing:10px;
     text-align: center;
     padding:10px;
-/*    margin: 0 auto;*/
     font-family: pacific;
     transition:.9s;
+    border-right: 1px white;
+/*-------------------------------logo-hover--------------------------------------*/
 
 }
 .logo__link:hover {
-    text-shadow: 12px 12px 12px black;
-    letter-spacing: 20px;
-    color:whitesmoke;
-    transition:.4s;  
+    transition:.2s;  
+    box-shadow: 0px 0px 0px 10px white;
 }
 
+
+
+/*-------------------------------------menu--------------------------*/
+.menu__list{
+    display: flex;
+    text-decoration: none;
+}
+/*-----------------------------menu-button-style---------------------------------*/
 .menu__item{
-    padding:10px 15px;
+    padding:10px 10px;
     font-size: 20px;
     margin-left: 15px;
     list-style-type: none;
     text-transform: lowercase;
     transition:.3s;
+    border: 1px solid white;
 }
+
+/*-----------------------menu-button-hover-animation----------------------------*/
 .menu__item:hover{
-    background-color: #FF9900;
-    border-radius: 4px;
-    transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 1);
+    transform: scale(1);
     transition:.3s;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgba(0, 255, 2, 1);
+    border-color: black;
     
 }
+
+/*-----------------------menu-button-active-hover-------------------------------*/
 .menu__item:active{
-    border-bottom: 4px solid white;
+    transform: scale(.9);
+    transition: 1ms;
+    box-shadow:-2px -2px 0px  rgba(0, 255, 2, 1);
 }
+
 .menu__link{
-  color:#fff;
+    color:white;
     text-decoration: none;
-}
-.menu__link:hover{
-    border-bottom: 4px solid white;
-}
-.menu__link:focus{
-        border-bottom: 4px solid white;
-
-}
-.menu__list{
-    display: flex;
-    text-decoration: none;
+    border-bottom: 4 solid white;
+    
 }
 
-/*
-.menu__link--active{
-    border-bottom: 4px solid;
-}
-*/
-/*---------------main---------------------*/
-.main {
+
+/*------------------------------------main-content--------------------------------*/
+.main__inner {
     margin-top: 350px;
 }
 
-.hello-container {
+.content-container__inner {
     text-align: center;
     width: 100%;
     overflow: hidden;
@@ -115,43 +115,24 @@ text-shadow: 4px 4px 4px black;
     padding-bottom: 300px;
 
 }
-.title {
+.title__text {
     font-size: 4em;
     font-family: monospace;
 }
 
-.subtitle {
+.subtitle__text {
     font-size: 2em;
     font-family: monospace;
     display: inline-block;
     text-align: center;
     width: 700px;
 }
-.hello-container2 {
-    text-align: center;
-    width: 100%;
-    padding-top:200px;
-    height: 100%;
-    padding-bottom: 300px;
-    background-color: white;
-}
-.title {
-    font-size: 4em;
-    font-family: monospace;
-}
 
-.subtitle {
-    font-size: 2em;
-    font-family: monospace;
-    display: inline-block;
-    text-align: center;
-    width: 700px;
-}
 
 /*--------------------------------------footer------------------------------------------*/
 .footer-container__inner {
     font-style: italic;
-    background-color: rgb(63,94,251);
+    background-color: rgba(0, 0, 0, 1);
     color: white;
     text-align: center;
     font-size: 1.1em;
