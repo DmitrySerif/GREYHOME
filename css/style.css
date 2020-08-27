@@ -47,11 +47,13 @@ body {
 	letter-spacing: 10px;
 	padding: 10px;
 	transition: .9s;
+    
 }
 
 .logo__link:hover {
 	transition: .2s;
-	box-shadow: 0px 0px 0px 15px white;
+	text-shadow: 2px 2px 2px blue,2px 2px 2px white, 2px 2px 2px blue ;
+    
 }
 
 
