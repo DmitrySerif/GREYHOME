@@ -702,57 +702,78 @@ body {
 
 
 }
+.footer-menu__link {
+    color: white;
+}
+.footer-menu__list:visited {
+color: white;}
 
 /*/footer*/
 /*            Адаптив*/
 @media only screen and (max-width: 600px) {
     .main-header {
         width: 100%;
+        
     }
 
     .main-navigation__inner {
-        /*        flex-wrap: wrap;*/
-        text-align: center;
+/*        text-align: center;*/
+        background-color: rgba(0, 0, 0, .1);
 
     }
-
+    .menu-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .main-logo {
         margin-top: auto;
         margin-bottom: auto;
-        display: block;
-        width: 100%;
+        display: inline;
+        width: auto;
+        padding: 0;
+        display: none;
     }
 
     .logo__link {
         vertical-align: bottom;
     }
 
-    .menu {}
+    .menu {
+       
+    }
 
     .menu__list {
-        width: 100%;
+        
         text-align: center;
         display: block;
+        
     }
 
     .menu__link {
+        
+        display: block;
         width: 100%;
         padding: 20px;
-        margin: 3px;
+        margin: 14px;
 
     }
 
     /*    home*/
     .home {
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .home__title {
-        display: none;
+        padding-top: 350px;
+        letter-spacing: 0;
+        font-size: 4em;
+/*        display: none;*/
     }
 
     .home__subtitle {
-        padding-top: 500px;
+        font-size: 2em;
     }
 
     /*    about*/
@@ -776,7 +797,7 @@ body {
         margin-bottom: 20px;
         border: none;
         padding: 5px;
-        font-size: 3em;
+        font-size: 1.8em;
         border-radius: 0;
 
     }
@@ -833,23 +854,40 @@ body {
 
     .form-call__title {
         outline: none;
-        font-size: 3em;
+        font-size: 2em;
 
+    }
+    .form-call__item {
+        width: 100%;
     }
 
     .form-call__subtitle {
         outline: none;
 
     }
+    .form-call__submit {
+        width: 100%;
+        padding: 0;
+    }
     .form-call__subform {
         width:100%;
         padding: 0;
         margin: 0;
+        outline: none;
+        border:none;
     }
     .footer {
         width: 100%;
         font-size: .7em;
         
+    }
+    .footer-menu__list {
+        display: block;
+    }
+    .footer-menu__item {
+        margin-top:60px;
+        font-size: 1.5em;
+    
     }
 }
 
