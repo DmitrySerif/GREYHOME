@@ -1,1 +1,1 @@
-# Nerooren
+Целевая страница(landing page) вымышленной дизайн-студии "GREYHOME".
